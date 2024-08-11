@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "websitetemplate.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="Untitled_1.css" rel="stylesheet" type="text/css" />
+<script src="https://kit.fontawesome.com/f6f5a21375.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- #BeginEditable "doctitle" -->
+<title>contact</title>
+<style type="text/css">
+
+
+
+
+
+
+
+body{
+	color:yellow;
+}
+
+#headers{
+	text-align:center;
+	font-size:50px;
+}
+
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing; 
+	border-box;
+	outline:none;
+}
+
+#wrapper{
+	position:absolute;
+	top:20%;
+	left:35%;	
+}
+
+#wrapper h1{
+	text-align:center;
+
+}
+
+#wrapper input{
+	margin-bottom:20px;
+	padding:10px;
+	width:90%;
+}
+
+#wrapper input input[type=text], 
+
+#wrapper textarea{
+   width:90%;
+   border:2px solid;
+   padding:10px;
+   
+}	
+
+#wrapper textarea{
+	height:60px;
+	resize:none;	
+}
+
+
+#wrapper .btn input[type=submit]{
+	border:0;
+	margin-top:15px;
+	padding:10px;
+	width:100%;
+	background:#fece0c;
+	text-transform:uppercase;
+	letter-spacing:5px;
+	font-weight:bold;
+	border-radius:25px;
+	cursor:pointer;
+}
+
+@media only screen and (min-width: 1367px) {
+#wrapper{
+	position:absolute;
+	top:20%;
+	left:40%;	
+}
+
+}
+
+
+@media only screen and (max-width: 1365px) {
+body{
+	
+}
+}
+
+
+</style>
+
+<script type="text/javascript">
+function thankyou(){
+ alert("Submited successfully");
+
+}
+
+</script>
+
+<!-- #EndEditable -->
+</head>
+
+<body>
+
+<div id="top_nav">
+  <a href="home.html">Home</a>
+  <a href="about_me.html">About Me</a>
+  <a href="education.html">Education</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script type="text/javascript">
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("top_nav").style.top = "0";
+  } else {
+    document.getElementById("top_nav").style.top = "-50px";
+  }
+}
+
+
+
+
+
+</script>
+<div id="footer">
+ <nav>
+ <h1>Made by Petros Xiromeritis 2020</h1>
+   <ul>
+   <li><a href="https://www.facebook.com/petros.xiromeritis"><i class="fab fa-facebook-square"></i></a></li>
+   <li><a href="https://www.instagram.com/petros.xiromeritis/"><i class="fab fa-instagram-square"></i></a></li> 
+  </ul>
+ </nav>
+
+</div>
+
+
+
+<!-- #BeginEditable "body" -->
+<div id="wrapper">
+<h1 id="headers">CONTACT ME</h1>
+<div class="error"></div>
+ <form id="form" onsubmit="thankyou()" action="https://formspree.io/mbjzgzjg" method="post" >
+   <div id="input">
+     <input type="text" placeholder="Name" name="name"></input>
+   </div>
+   <div id="input0">
+     <input type="text" placeholder="Email" name="email"></input>
+   </div>
+   <div id="input1">
+     <textarea  placeholder="Message" name="message"></textarea>
+   </div>
+   <div class="btn">
+     <input type="submit" value="Submit">
+   </div>
+
+ </form>
+</div>
+<!-- #EndEditable -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

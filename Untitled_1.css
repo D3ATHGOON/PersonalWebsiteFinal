@@ -1,0 +1,129 @@
+﻿/* CSS layout */
+body {
+    color:white;
+	margin: 0;
+	padding: 0;
+	background-image:url('background_11.wide.jpeg');
+	
+	background-repeat:no-repeat;
+	font-size:medium;
+	height:100%;
+}
+
+
+
+#header{
+    margin: 0;
+    padding: 0;    
+    width:100%;
+    text-align:center;
+    font-size:100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#top_nav {
+background-color:aqua;
+  position:fixed;
+  top:-50px;
+  width: 100%;
+  text-align:center;
+  display:inline-block;
+  opacity:0.5;
+  z-index:500;
+  
+}
+
+#top_nav:hover{
+	opacity:1;
+}
+
+#top_nav a {
+  
+  
+  display:inline-block;
+  color: black;
+  text-align:inherit;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#top_nav a:hover {
+  transition: 0.3s;
+  color:red;
+  
+}
+
+
+
+#container {
+	min-width: 600px;
+}
+
+#left_col {
+	width: 200px;
+	float: left;
+}
+
+#right_col {
+	width: 200px;
+	float: right;
+}
+
+#page_content {
+	margin-left: 400px;
+	margin-right: 400px;
+	font-size:xx-large;
+}
+
+#footer {
+  position: absolute;
+  top:900px;
+  text-align:center;
+  right:500px;
+  width:30%;
+  
+  }
+
+#footer h1{
+   position:absolute;
+   top:40px;
+   right:-11px;
+   font-family:cursive;
+   color:rgb(255,255,0,1);
+   }
+
+ul{
+	text-align:center;
+	
+}	
+	
+ul li a:hover{
+	color:red;
+	transition:0.5s;
+}	
+	
+ul li{
+	display:inline-block;
+	font-size:40px;
+	
+	
+}	
+
+ul li a{
+	color:rgb(255,255,0,1);
+	
+}
+
+@media only screen and (min-width: 1367px) {
+ #footer h1{
+     right:15px;
+      }
+
+}
+
+@media only screen and (max-width: 1365px) {
+#footer {
+  right:450px;  
+  }
+}
